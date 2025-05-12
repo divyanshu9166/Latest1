@@ -31,6 +31,7 @@ export default function Home() {
                     <SmoothCursor />
                     <Hero1 />
                     <h1>you have done it</h1>
+                    <h2>yo</h2>
                     <Product1 />
                    
                     <Service1 />
