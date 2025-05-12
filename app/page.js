@@ -29,6 +29,7 @@ export default function Home() {
                     <div className="line-shape cus-z-1 first w-100 h-100 d-flex flex-wrap" />
                     <SmoothCursor />
                     <Hero1 />
+                    <h1>you are</h1>
                     <Product1 />
                    
                     <Service1 />
