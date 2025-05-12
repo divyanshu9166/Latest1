@@ -34,6 +34,7 @@ export default function Home() {
                     <h2>yo</h2>
                     <h1>yoho</h2>
                     <h2>ayush</h2>
+                    <h1>shreyash</h1>
                     <Product1 />
                    
                     <Service1 />
