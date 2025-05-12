@@ -30,8 +30,10 @@ export default function Home() {
                     <div className="line-shape cus-z-1 first w-100 h-100 d-flex flex-wrap" />
                     <SmoothCursor />
                     <Hero1 />
-                    <h1>you have done it</h1>
+                    <h1>you are</h1>
                     <h2>yo</h2>
+                    <h1>yoho</h2>
+                    <h2>yohiiiio</h2>
                     <Product1 />
                    
                     <Service1 />
