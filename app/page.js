@@ -26,6 +26,7 @@ export default function Home() {
         <>
             <Layout headerStyle={1} footerStyle={1}>
                 <div className="position-relative overflow-hidden">
+
                     <div className="line-shape cus-z-1 first w-100 h-100 d-flex flex-wrap" />
                     <SmoothCursor />
                     <Hero1 />
