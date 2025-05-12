@@ -1,0 +1,147 @@
+/* Service1 module styles */
+.serviceCard {
+  padding-top: 68px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(208, 205, 239, 0.2);
+  margin: 0 15px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(47, 46, 72, 0.1);
+  border-radius: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.serviceCard:hover {
+  background-color: rgba(47, 46, 72, 0.3);
+  transform: translateY(-5px);
+}
+
+.text {
+  flex: 1;
+}
+
+.performance {
+  color: #d0cdef;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 38px;
+  text-transform: capitalize;
+  display: block;
+}
+
+.title {
+  margin-bottom: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+.titleLink {
+  color: #faf9fe;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.titleLink:hover {
+  color: #BAE900;
+}
+
+.arrowLink {
+  font-size: 20px;
+  display: inline-block;
+  color: #BAE900;
+  transition: all 0.3s ease-in-out;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.arrowLink:hover {
+  transform: translateY(-5px);
+}
+
+.imageContainer {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: -1;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.active {
+  background-color: rgba(47, 46, 72, 0.3);
+}
+
+.active .imageContainer {
+  opacity: 1;
+  visibility: visible;
+}
+
+.circleWrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotateAnimation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotate 30s linear infinite;
+}
+
+.serviceImage {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.serviceCard.active .imageContainer {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .serviceCard {
+    padding-top: 50px;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+}
