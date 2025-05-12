@@ -33,7 +33,6 @@ export default function Home() {
                     <h1>you are</h1>
                     <h2>yo</h2>
                     <h1>yoho</h2>
-                    <h2>yohiiiio</h2>
                     <Product1 />
                    
                     <Service1 />
