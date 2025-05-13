@@ -30,13 +30,9 @@ export default function Home() {
                     <div className="line-shape cus-z-1 first w-100 h-100 d-flex flex-wrap" />
                     <SmoothCursor />
                     <Hero1 />
-                    <h1>you are</h1>
-                    <h2>yo</h2>
-                    <h1>yoho</h2>
-                    <h2>ayush</h2>
-                    <h1>shreyash</h1>
+                    
                     <Product1 />
-                   
+                   <h2>"welcome to our world"</h2>
                     <Service1 />
                     <TextSLider1 />
                     <ParallaxScrollWith3DEffect />
