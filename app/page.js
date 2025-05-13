@@ -32,7 +32,8 @@ export default function Home() {
                     <Hero1 />
                     
                     <Product1 />
-                   
+                   <h2>"welcome to our world"</h2>
+                   <h3>changing </h3>
                     <Service1 />
                     <TextSLider1 />
                     <ParallaxScrollWith3DEffect />
