@@ -33,6 +33,7 @@ export default function Home() {
                     
                     <Product1 />
                    <h2>"welcome to our world"</h2>
+                   <h4>bhen k lode  </h4>
                     <Service1 />
                     <TextSLider1 />
                     <ParallaxScrollWith3DEffect />
