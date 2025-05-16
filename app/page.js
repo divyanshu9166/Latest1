@@ -2,7 +2,6 @@ import Layout from "@/components/layout/Layout"
 import Blog1 from "@/components/sections/Blog1"
 import Hero1 from "@/components/sections/Hero1"
 import Product1 from "@/components/sections/Product1"
-import Service1 from "@/components/sections/Service1"
 import Team1 from "@/components/sections/Team1"
 
 import TextSLider1 from "@/components/sections/TextSLider1"
@@ -10,9 +9,10 @@ import TextSLider2 from "@/components/sections/TextSLider2"
 import TextSLider3 from "@/components/sections/TextSLider3"
 import Watch1 from "@/components/sections/Watch1"
 import TeamSection from "@/components/sections/TeamSection"
-
-
 import { ParallaxScrollWith3DEffect } from "@/components/sections/ParallaxScrollWith3DEffect"
+import ServiceSection from "@/components/ServiceSection"
+import QueryProjectSection from "@/components/sections/QueryProjectSection.jsx"
+import Services from "@/components/Services"
 
 import dynamic from 'next/dynamic'
 import { AnimatedTestimonials } from "@/components/sections/animated-testimonials";
@@ -70,20 +70,15 @@ export default function Home() {
                     <Hero1 />
                     
                     <Product1 />
-                   <h2>"welcome to our world"</h2>
-                   <h4>bhen k lode  </h4>
-                   <h3>changing </h3>
-                    <Service1 />
+                    <ServiceSection />
+
                     <TextSLider1 />
                     <ParallaxScrollWith3DEffect />
                     <Watch1 />
                     <Team1 />
                     <TextSLider2 />
-                    
-                   
-                  <AnimatedTestimonials testimonials={testimonials} />
-                    <Blog1 />
-                    
+                    <AnimatedTestimonials testimonials={testimonials} />                    <Blog1 />
+                    <QueryProjectSection />
                     <TextSLider3 />
                     <TeamSection/>
                     

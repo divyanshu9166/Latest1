@@ -1,147 +1,124 @@
-/* Service1 module styles */
+/* Service1.module.css */
+
 .serviceCard {
-  padding-top: 68px;
   position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
-  border-bottom: 1px solid rgba(208, 205, 239, 0.2);
-  margin: 0 15px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  overflow: hidden;
   margin-bottom: 20px;
-  transition: all 0.3s ease-in-out;
-  background-color: rgba(47, 46, 72, 0.1);
-  border-radius: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
 .serviceCard:hover {
-  background-color: rgba(47, 46, 72, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
+}
+
+.serviceCard.active {
+  background-color: var(--colors-primary);
+  color: white;
+}
+
+.serviceCard.active .titleLink {
+  color: white;
 }
 
 .text {
-  flex: 1;
+  position: relative;
+  z-index: 2;
 }
 
 .performance {
-  color: #d0cdef;
-  font-family: inherit;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 38px;
-  text-transform: capitalize;
-  display: block;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .title {
-  margin-bottom: 0;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.2;
-  text-transform: capitalize;
-  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
 }
 
 .titleLink {
-  color: #faf9fe;
+  color: inherit;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 .titleLink:hover {
-  color: #BAE900;
+  color: var(--colors-primary);
 }
 
 .arrowLink {
-  font-size: 20px;
-  display: inline-block;
-  color: #BAE900;
-  transition: all 0.3s ease-in-out;
-  margin-left: 15px;
-  margin-top: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s;
 }
 
 .arrowLink:hover {
-  transform: translateY(-5px);
+  background-color: #fff;
+  color: var(--colors-primary);
 }
 
 .imageContainer {
   position: absolute;
-  right: 20px;
-  top: 10px;
-  z-index: -1;
-  width: 90px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  height: 150px;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease;
+  z-index: 1;
 }
 
-.visible {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-.active {
-  background-color: rgba(47, 46, 72, 0.3);
-}
-
-.active .imageContainer {
+.imageContainer.visible {
   opacity: 1;
   visibility: visible;
 }
 
 .circleWrapper {
+  position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .rotateAnimation {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: rotate 30s linear infinite;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: rotate 10s linear infinite;
 }
 
 .serviceImage {
-  max-width: 60%;
-  max-height: 60%;
-}
-
-.serviceCard.active .imageContainer {
-  opacity: 1;
-  visibility: visible;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 @keyframes rotate {
-  0% {
+  from {
     transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
-  }
-}
-
-@media (max-width: 767px) {
-  .serviceCard {
-    padding-top: 50px;
-  }
-  
-  .title {
-    font-size: 24px;
   }
 }
